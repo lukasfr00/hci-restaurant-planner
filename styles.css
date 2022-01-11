@@ -1,0 +1,14 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css');
+html,
+body {
+
+}
+
+.grid-room{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
