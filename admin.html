@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+    <title>Admin-Bereich</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Restaurant-Planer</a>
+        <button><a href="login.html">Logout</a></button>
+    </nav>
+    <div class="site">
+        <div class="dashboard">
+            <ul class="menu">
+                <li><a href="inprogress.html">Übersicht</a></li>
+                <li id="res">Reservierungen</li>
+                <li><a href="inprogress.html">Tischbelegung</a></li>
+                <li><a href="inprogress.html">Speisen & Getränke</a></li>
+                <li><a href="inprogress.html">Abrechnung</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h1>Reservierungen</h1>
+                <div id="today" class="box"><h2>Reservierungen heute</h2>
+                    <div class="dropdown" onclick="open_reservation(1)">
+                        <div id="arr1" class="arrow">></div>
+                        <h4>Reservierung Nr. 1</h4>
+                    </div>
+                    <div id="res1" class="reservierung">
+                        <div class="fname">Vorname: Peter</div>
+                        <div class="lname">Nachname: Müller</div>
+                        <div class="persons">Anzahl: 4</div>
+                        <div class="table">Tischnr.: 12</div>
+                        <ul class="dishes">
+                        </ul>
+                    </div>
+                    <div class="dropdown" onclick="open_reservation(2)">
+                        <div id="arr2" class="arrow">></div>
+                        <h4>Reservierung Nr. 2</h4>
+                    </div>
+                    <div id="res2" class="reservierung">
+                        <div class="fname">Vorname: Lisa</div>
+                        <div class="lname">Nachname: Maier</div>
+                        <div class="persons">Anzahl: 2</div>
+                        <div class="table">Tischnr.: 15</div>
+                        <ul class="dishes">
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tomorrow" class="box"><h2>Reservierungen morgen</h2>
+                    <div class="dropdown" onclick="open_reservation(3)">
+                        <div id="arr3" class="arrow">></div>
+                        <h4>Reservierung Nr. 3</h4>
+                    </div>
+                    <div id="res3" class="reservierung">
+                        <div class="fname">Vorname: Jan</div>
+                        <div class="lname">Nachname: Köhler</div>
+                        <div class="persons">Anzahl: 6</div>
+                        <div class="table">Tischnr.: 2</div>
+                        <ul class="dishes">
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="later" class="box"><h2>Reservierungen Rest der Woche</h2></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

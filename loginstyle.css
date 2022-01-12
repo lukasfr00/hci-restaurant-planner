@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.border {
+    width: 50%;
+    height: 100%;
+    border: 10px solid rgb(92, 92, 92);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    margin: 20px 0;
+}
+
+.loginfield input {
+    width: 100%;
+}
+
+.loginfield input,
+.loginfield button {
+    margin-bottom: 15px;
+}
+
+#wrongInput {
+    display: none;
+    color: red;
+}

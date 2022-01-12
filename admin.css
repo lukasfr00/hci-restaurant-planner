@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.site {
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard {
+    width: 20%;
+    height: 100%;
+    background: rgb(36, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu {
+    color: white;
+    list-style: none;
+}
+
+.menu li {
+    margin: 40px 0;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    transition: 300ms;
+    transform: scale(1.05);
+}
+
+#res {
+    color: wheat;
+}
+
+.site .container {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.dropdown {
+    display: flex;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.arrow {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.reservierung {
+    display: none;
+}
+
+.dropdown:hover {
+    transform: scale(1.01);
+    transition: 300ms;
+}
